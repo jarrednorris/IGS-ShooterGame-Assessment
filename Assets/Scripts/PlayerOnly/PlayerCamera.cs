@@ -9,7 +9,7 @@ public class PlayerCamera : MonoBehaviour {
 
     void Awake()
     {
-        playerSprite = GameObject.Find("PlayerSprite");
+        playerSprite = GameObject.Find("PlayerSprite"); 
     }
 
     // Update is called once per frame
@@ -23,14 +23,15 @@ public class PlayerCamera : MonoBehaviour {
 		x.z = -10;
 		x.y = 0;
 
-		if (x.x < -34.18f)
+        //clamps camera at ends of screen
+		if (x.x < -33.784f)
 		{
-			x.x = -34.18f;
+			x.x = -33.784f;
 		}
 
-		if (x.x > 34.18f)
+		if (x.x > 33.784f)
 		{
-			x.x = 34.18f;
+			x.x = 33.784f;
 		}
         
 		transform.position = x;

@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour {
     public Rigidbody2D rb;
     public float moveSpeed = 1;
 
-	void Awake ()
+	void Awake ()  //on awake the enemy moves left at set speed
     {
         rb.velocity = new Vector2(-moveSpeed, 0);
 

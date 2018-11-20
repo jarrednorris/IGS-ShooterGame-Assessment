@@ -7,14 +7,7 @@ public class EnemyWeapon : MonoBehaviour {
     public Transform firePoint;
     public GameObject bulletPrefab;
     bool enemyShootReady = true;
-    public float shootWait = 1;
-
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    public float shootWait = 1; //enemy shot speed
 
     // Update is called once per frame
     void Update()

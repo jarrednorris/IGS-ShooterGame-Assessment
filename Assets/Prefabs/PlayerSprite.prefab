@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114623225401933072}
   - component: {fileID: 114775289814836868}
   - component: {fileID: 114334674840985874}
+  - component: {fileID: 114104007266947614}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Player
@@ -43,7 +44,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerFirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850467067782818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.349, y: 0, z: 0}
+  m_LocalPosition: {x: 1.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4982740434122664}
@@ -109,6 +110,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &114104007266947614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512470301206596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82737cdd099b3a47b47bdefb5cba7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!114 &114334674840985874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,6 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthMax: 100
   healthCurrent: 100
+  playerSprite: {fileID: 0}
+  scoreGain: 0
   onDie:
     m_PersistentCalls:
       m_Calls:
