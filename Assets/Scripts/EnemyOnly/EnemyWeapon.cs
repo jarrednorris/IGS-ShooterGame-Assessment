@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyWeapon : MonoBehaviour {
 
     public Transform firePoint;
-    public GameObject bulletPrefab;
+    public GameObject bulletPrefabA;
     bool enemyShootReady = true;
     public float shootWait = 1; //enemy shot speed
 
@@ -28,6 +28,6 @@ public class EnemyWeapon : MonoBehaviour {
 
     public void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(bulletPrefabA, firePoint.position, firePoint.rotation);
     }
 }

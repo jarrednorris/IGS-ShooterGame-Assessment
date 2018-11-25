@@ -44,7 +44,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerFirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850467067782818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4982740434122664}
@@ -69,7 +69,7 @@ Transform:
   m_GameObject: {fileID: 1512470301206596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -45, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4097297248348954}
   m_Father: {fileID: 0}
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  scoreTextObject: {fileID: 0}
 --- !u!114 &114334674840985874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,7 +180,7 @@ MonoBehaviour:
   firePoint: {fileID: 4097297248348954}
   bulletPrefab: {fileID: 1645580237498696, guid: 2ef9de5b3e848b3439efd861b317ffbf,
     type: 2}
-  shootWait: 0.3
+  shootWait: 0.6
 --- !u!212 &212130606883484096
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -215,7 +216,7 @@ SpriteRenderer:
   m_SortingLayerID: 590937441
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e3cb08f80d89d546ace4e2d35031abe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 877cbaed8faac9e46becbfdf4acd3fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

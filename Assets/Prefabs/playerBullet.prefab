@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1645580237498696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 20
+  damage: 34
   rb: {fileID: 50670326176266760}
   damageTag: Enemy
 --- !u!212 &212119220247572620
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0.8640461, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.8801322, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

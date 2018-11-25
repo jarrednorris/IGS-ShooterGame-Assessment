@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour {
     {
         
         var bulletHit = whatHit.GetComponent<Health>(); //calls the health component of what the bullet hit
-        if (whatHit.tag == damageTag && bulletHit != null) //if the tag of what was hit was equal to what it wants to hit
+        if (whatHit.tag == damageTag && bulletHit != null) //if the tag of what was hit was equal to what it wants to hit and it contains a health component
         {
             bulletHit.modifyHealth(-damage); //the objects health is modified if collision is with enemy
         }
