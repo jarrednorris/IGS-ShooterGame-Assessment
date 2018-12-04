@@ -38,8 +38,9 @@ public class EnemyMovement : MonoBehaviour {
             collisionHit.modifyHealth(-collisionDamage); //the objects health is modified if collision is with enemy
             Destroy(gameObject); //object is deleted after any collision
         }
-        
 
-        
+
+
+
     }
 }

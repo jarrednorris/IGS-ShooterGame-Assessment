@@ -38,7 +38,7 @@ GameObject:
   m_Layer: 0
   m_Name: Enemy Two Formation
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -471,14 +471,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d3be7b9979faf4b8df31f0c277e714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupLife: {fileID: 1429962366599844, guid: 917a28df706bf2a4c95a54223f9bc36d, type: 2}
-  pickupHeal: {fileID: 1503800576972180, guid: 0fe93936e6ce2e8479ea53ba5740d6ea, type: 2}
-  pickupSpeed: {fileID: 1961200783535404, guid: f53be8bcf76668d419fc1799dae1a83c,
-    type: 2}
-  pickupDamage: {fileID: 1615722263583382, guid: e54b2e5fd45004341a44c08c4027f5db,
-    type: 2}
-  pickupFireRate: {fileID: 1929753764523084, guid: a27dd6c14a05dfd469c85e751b712c69,
-    type: 2}
+  pickups:
+  - name: 
+    prefab: {fileID: 1615722263583382, guid: e54b2e5fd45004341a44c08c4027f5db, type: 2}
+  - name: 
+    prefab: {fileID: 1929753764523084, guid: a27dd6c14a05dfd469c85e751b712c69, type: 2}
+  - name: 
+    prefab: {fileID: 1503800576972180, guid: 0fe93936e6ce2e8479ea53ba5740d6ea, type: 2}
+  - name: 
+    prefab: {fileID: 1429962366599844, guid: 917a28df706bf2a4c95a54223f9bc36d, type: 2}
+  - name: 
+    prefab: {fileID: 1961200783535404, guid: f53be8bcf76668d419fc1799dae1a83c, type: 2}
 --- !u!114 &114750976448335978
 MonoBehaviour:
   m_ObjectHideFlags: 1

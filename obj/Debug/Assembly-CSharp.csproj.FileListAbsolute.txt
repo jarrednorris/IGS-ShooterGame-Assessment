@@ -1,0 +1,2 @@
+D:\Jazz\Documents\Uni Stuff\Code\IGS\GitHub Clones\IGS ShooterGame Assessment\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Jazz\Documents\Uni Stuff\Code\IGS\GitHub Clones\IGS ShooterGame Assessment\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

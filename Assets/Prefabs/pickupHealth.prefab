@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4528194721649332}
   - component: {fileID: 212245207682833936}
   - component: {fileID: 114993649831682010}
+  - component: {fileID: 50184822167578686}
+  - component: {fileID: 60329442575659418}
   m_Layer: 0
   m_Name: pickupHealth
   m_TagString: Untagged
@@ -41,6 +43,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50184822167578686
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503800576972180}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &60329442575659418
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503800576972180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.089999996, y: 0.13}
+      - {x: -0.14, y: 0.099999994}
+      - {x: -0.14, y: 0.02}
+      - {x: -0.13, y: -0.02}
+      - {x: -0.04, y: -0.12}
+      - {x: 0.03, y: -0.12}
+      - {x: 0.12, y: -0.089999996}
+      - {x: 0.14, y: -0.03}
+      - {x: 0.14, y: 0.11}
+      - {x: 0.11, y: 0.13}
 --- !u!114 &114993649831682010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,11 +108,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6056fed01eb1e4fa6983b7734b7f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerSprite: {fileID: 0}
-  PlayerBullet: {fileID: 0}
-  speedBoost: 0
-  damageBoost: 0
-  fireRateBoost: 0
+  playerSprite: {fileID: 0}
+  playerBullet: {fileID: 1645580237498696, guid: 2ef9de5b3e848b3439efd861b317ffbf,
+    type: 2}
+  speedBoost: 50
+  damageBoost: 50
+  fireRateBoost: 0.2
 --- !u!212 &212245207682833936
 SpriteRenderer:
   m_ObjectHideFlags: 1
