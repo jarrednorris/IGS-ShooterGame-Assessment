@@ -66,11 +66,13 @@
     <Compile Include="Assets\Scripts\EnemyOnly\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\EnemyOnly\EnemyWeapon.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\PickupSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerOnly\LifeManager.cs" />
     <Compile Include="Assets\Scripts\PlayerOnly\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerOnly\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerOnly\PlayerScore.cs" />
     <Compile Include="Assets\Scripts\PlayerOnly\PlayerWeapon.cs" />
+    <Compile Include="Assets\Scripts\PlayerPickups.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

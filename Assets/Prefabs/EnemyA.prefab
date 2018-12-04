@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 50707732323501862}
   moveSpeedX: -1.75
-  moveSpeedY: -1.75
+  moveSpeedY: 0
   moveMinX: -45
   moveMaxX: 100
   moveMinY: 0

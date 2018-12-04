@@ -10,13 +10,13 @@ public class LifeManager : MonoBehaviour
     private GameObject currentPlayerObject; //name of current playersprite
     public GameObject playerPrefab; //name of playersprite prefab
     public Transform spawnPoint; //where the player spawns
-    public int numLives, maxLives = 3;
+    public int numLives;
     public UnityEvent onLivesZero; //event called when player loses all lives
     public TextMeshProUGUI livesText;
 
     private void Awake()
     {
-        numLives = maxLives;
+        numLives = 3;
         livesText.text = "Lives: " + numLives.ToString();
         SpawnPlayer();
         currentPlayerObject = GameObject.Find("PlayerSprite");
@@ -25,7 +25,7 @@ public class LifeManager : MonoBehaviour
 
     public void ModifyLives(int amount)
     {
-        numLives = (int)Mathf.Clamp(numLives + amount, 0, maxLives); //reduces lives and clamps values
+        numLives = (int)Mathf.Clamp(numLives + amount, 0, 10); //reduces lives and clamps values
         livesText.text = "Lives: " + numLives.ToString();
         Debug.Log("numLives decreased!");
         if (numLives == 0)

@@ -20,10 +20,12 @@ public class EnemySpawner : MonoBehaviour {
     {
         public GameObject enemyPrefab;
         public Transform point;
+
     }
 
     private float timer;
     public float spawnInterval = 5; // interval at which enemies respawn
+    public float spawnDelay = 5; // interval at which enemies respawn
 
 
     private void Update() //timer
@@ -38,7 +40,7 @@ public class EnemySpawner : MonoBehaviour {
 
     private void Awake()
     {
-         timer = spawnInterval ;
+         timer = spawnInterval - spawnDelay ;
 }
 }
 

@@ -17,38 +17,17 @@ public class EnemyMovement : MonoBehaviour {
 	void Awake ()  //on awake the enemy moves left at set speed
     {
         Vector3 enemyPosition = gameObject.transform.position;
-        if (enemyPosition.y < 0)
-            moveSpeedY = moveSpeedY * -1;
-        if (enemyPosition.y == 0)
-            moveSpeedY = 0;
         rb.velocity = new Vector2(moveSpeedX, moveSpeedY);
         rb.velocity.Normalize();
-        moveMinY = gameObject.transform.position.y - 0.5f;
-
-        moveMaxY = gameObject.transform.position.y + 0.5f;
-        
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         Vector3 enemyPosition = gameObject.transform.position;
-
         if (enemyPosition.x < moveMinX)
             Destroy(gameObject);
-
-        if (enemyPosition.y < moveMinY)
-        {
-            moveSpeedY = moveSpeedY * -1;
-            rb.velocity = new Vector2(moveSpeedX, moveSpeedY);
-            rb.velocity.Normalize();
-        }
-        if (enemyPosition.y > moveMaxY)
-        {
-            moveSpeedY = moveSpeedY * -1;
-            rb.velocity = new Vector2(moveSpeedX, moveSpeedY);
-            rb.velocity.Normalize();
-        }
     }
+
     void OnCollisionEnter2D(Collision2D whatHit) //initialise when 2 colliders collide
     {
         Debug.Log("collider hits");
@@ -59,7 +38,7 @@ public class EnemyMovement : MonoBehaviour {
             collisionHit.modifyHealth(-collisionDamage); //the objects health is modified if collision is with enemy
             Destroy(gameObject); //object is deleted after any collision
         }
-
+        
 
         
     }
